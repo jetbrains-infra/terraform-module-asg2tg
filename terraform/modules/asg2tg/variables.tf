@@ -23,7 +23,6 @@ variable "autoscaling_groups_names" {
 
 locals {
   dashed_name = "${lower(replace(var.project_name, " ", "-"))}-${lower(replace(var.stage, " ", "-"))}"
-  ebs_id      = "${local.dashed_name}-${var.name}"
   tags = merge(var.tags, {
     Name    = local.dashed_name
     Service = var.name

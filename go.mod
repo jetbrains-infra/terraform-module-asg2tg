@@ -1,4 +1,4 @@
-module jetbrains.team/asg2tg.git
+module github.com/jetbrains-infra/terraform-module-asg2tg
 
 go 1.13
 
